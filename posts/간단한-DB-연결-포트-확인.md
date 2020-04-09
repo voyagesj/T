@@ -1,6 +1,6 @@
 
 간단한 연결 포트 확인은 telnet 으로도 되지만,
-Database 연결 확인 은  *.udl 을 만들어서 테스트 가능하다.(ODBC 설치되어 있는경우)
+Database 연결 확인 은  *.udl 을 만들어서 테스트 가능하다. (ODBC 설치되어 있는경우)
 
 
 ![PostImages](/assets/PostImages/2019-06-18-01.png)
