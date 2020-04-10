@@ -31,8 +31,8 @@ public class HendleSPListItem
 			Console.WriteLine(folder.Files[i - 1].ServerRelativeUrl);
 			folder.Files[i - 1].Delete();
 		}
-		if (folder.SubFolders.Count == 0) { folder.Delete(); }
-		else
+		//하위폴더가 있으면 하위폴더 삭제 재귀
+		if(folder.SubFolders.Count > 0)
 		{
 			SPFolder sFolder = null;
 			for (int i = folder.SubFolders.Count; i > 0; i--)
@@ -42,6 +42,8 @@ public class HendleSPListItem
 				RemoveFolderItems(sFolder);
 			}
 		}
+                //하위폴더 수 다시체크. 없으면 현재폴더 삭제
+                if (folder.SubFolders.Count == 0) { folder.Delete(); }
 	}
 }
 //이벤트 리시버 비활성화 처리
