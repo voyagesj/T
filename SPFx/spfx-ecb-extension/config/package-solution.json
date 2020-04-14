@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-ecb-extension-client-side-solution",
+    "id": "c0ae687b-aec5-4c82-a726-1e8701f6ac4c",
+    "version": "1.0.0.5",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action.",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "dcb36008-30bf-4f89-9e06-2b8fd37ccb0c",
+        "version": "1.0.0.5",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-ecb-extension.sppkg"
+  }
+}

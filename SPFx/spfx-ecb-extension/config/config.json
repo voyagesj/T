@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "spfx-ecb-extension-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/spfxEcbExtension/SpfxEcbExtensionCommandSet.js",
+          "manifest": "./src/extensions/spfxEcbExtension/SpfxEcbExtensionCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpfxEcbExtensionCommandSetStrings": "lib/extensions/spfxEcbExtension/loc/{locale}.js"
+  }
+}

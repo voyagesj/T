@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="SpfxEcbExtension"
+        RegistrationId="101"
+        RegistrationType="List"
+        Location="ClientSideExtension.ListViewCommandSet"
+        ClientSideComponentId="272e3234-c266-4504-8821-abd2355ab574"
+        ClientSideComponentProperties="{&quot;Smart Bogo&quot;:&quot;One item is selected in the list.&quot;}">
+    </CustomAction>
+</Elements>
