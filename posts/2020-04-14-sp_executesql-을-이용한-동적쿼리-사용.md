@@ -1,7 +1,7 @@
 이해가 잘 되지 않아 직접 테스트해본 sp_executesql
 동적쿼리를 사용할 경우 EXEC 문 보다 sp_executesql 이 성능상 더 좋다고 한다.
 
-```MS-SQL
+```SQL
 /*
 sp_executesql 을 이용한 동적쿼리 사용
   
