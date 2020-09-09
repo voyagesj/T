@@ -91,8 +91,8 @@ namespace SPCSOMTest.Controllers
                 ClContext = new ClientContext(webUrl);
 
                 //사용자 인증
-                string loginEmail = "voyagesj@wspw.onmicrosoft.com";
-                string strPassword = "@NEf0rAll";
+                string loginEmail = "some_id@wspw.onmicrosoft.com";
+                string strPassword = "some_password";
                 SecureString securePassword = new SecureString();
                 foreach (var chr in strPassword) securePassword.AppendChar(chr);
                 ClContext.Credentials = new SharePointOnlineCredentials(loginEmail, securePassword);
